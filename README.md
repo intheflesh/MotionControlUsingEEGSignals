@@ -46,6 +46,9 @@ and now the features are ready.
 in order to run the actual training - simply update the dataPath variable under "run.py" to the features root folder and run it.
 This in turn, will perform multiple training steps with the "leave one out" method, as the number of speakers and data size is limited.
 
+You can choose one of 4 desired NN architectures under the ModelLib folder (it is a package imported to "run.py") where the 
+top model we found is referenced as "chosenCNNModel.py", but as mentioned we tried more architectures. 
+
 # visualization
 you can use "visualizeFeatures.py" to visualize the features and "visualizeResults.py" for results visualization in a bar plot. 
 
