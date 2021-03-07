@@ -24,13 +24,20 @@ and y is just a running number - no real meaning, just so that the files will no
 
 each .wav or .npy (EEG) file represents exactly 4 seconds, 
 where the .wav is just a stream of samples, sampled with a freq of 44100 Hz,
-and the .npy file is a matrix of 6X4096 values, where each row is a different sensor, and the sensor sampling freq is 1024 Hz.
-each vector represents a different sensor - creating the follwing order: F3,F4,C3,C4,P3,P4
+and the .npy file is a matrix of 6X4096 values, 
+where each row is a different sensor, and the sensor sampling freq is 1024 Hz.
+each vector represents a different sensor 
+- creating the follwing order: F3,F4,C3,C4,P3,P4
 
-4) now we would liket to detect when speech occured to extract the relevant segments, for that you need to run "VAD.py" and it would create .txt files with a list of segments
-5) now you need to actually slice the segments out - for that - run "ChopSegmentsOut.py" - this in turn will split our x_y format to x_y_z where z is also a running number
-6) now finally we can start processing the relevant EEG segments - first we can filter out the segments that are too short or too long - as the VAD can produce errors -
-for that run "filterShortAndLongWords.py" - it filters out all files below 15 precentile and over 95 precentile - per word (so we have 6X2 precentiles, and you can change the values as you see fit).
+4) now we would liket to detect when speech occured to extract the relevant segments, for that you need to run "VAD.py" 
+and it would create .txt files with a list of segments
+5) now you need to actually slice the segments out - for that - run "ChopSegmentsOut.py" - 
+this in turn will split our x_y format to x_y_z where z is also a running number
+6) now finally we can start processing the relevant EEG segments - 
+first we can filter out the segments that are too short or too long - as the VAD can produce errors -
+for that run "filterShortAndLongWords.py" - 
+it filters out all files below 15 precentile and over 95 precentile - per word 
+(so we have 6X2 precentiles, and you can change the values as you see fit).
 7) now we need to perform framing, windowing and convert our EEG frames to spectrograms - all this is done in "ConvetTimeToFreq.py"
 
 and now the features are ready.
