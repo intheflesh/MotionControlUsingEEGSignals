@@ -46,4 +46,7 @@ and now the features are ready.
 in order to run the actual training - simply update the dataPath variable under "run.py" to the features root folder and run it.
 This in turn, will perform multiple training steps with the "leave one out" method, as the number of speakers and data size is limited.
 
+# visualization
+you can use "visualizeFeatures.py" to visualize the features and "visualizeResults.py" for results visualization in a bar plot. 
+
 Enjoy!
