@@ -34,6 +34,8 @@ for that run "filterShortAndLongWords.py" - it filters out all files below 15 pr
 
 and now the features are ready.
 
+# training
+
 in order to run the actual training - simply update the dataPath variable under "run.py" to the features root folder and run it.
 This in turn, will perform multiple training steps with the "leave one out" method, as the number of speakers and data size is limited.
 
