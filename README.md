@@ -26,8 +26,7 @@ each .wav or .npy (EEG) file represents exactly 4 seconds,
 where the .wav is just a stream of samples, sampled with a freq of 44100 Hz,
 and the .npy file is a matrix of 6X4096 values, 
 where each row is a different sensor, and the sensor sampling freq is 1024 Hz.
-each vector represents a different sensor 
-- creating the follwing order: F3,F4,C3,C4,P3,P4
+each vector represents a different sensor - creating the follwing order: F3,F4,C3,C4,P3,P4
 
 4) now we would liket to detect when speech occured to extract the relevant segments, for that you need to run "VAD.py" 
 and it would create .txt files with a list of segments
