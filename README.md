@@ -1,5 +1,5 @@
 # MotionControlUsingEEGSignals
-This work is based on the following article:
+This work is done by Noga Mudrik and Roman Frenkel, and is based on the following article:
 https://www.researchgate.net/publication/312953157_Open_access_database_of_EEG_signals_recorded_during_imagined_speech
 This is a repo for our implementation of a 6 label motion control using EEG signals
 This code enables data preparatin and model training.
