@@ -9,7 +9,8 @@ This code enables data preparatin and model training.
 https://drive.google.com/file/d/0By7apHbIp8ENZVBLRFVlSFhzbHc/view
 2) now we would like to take the raw dataset that comes in mat format and turn it into something more python friendly like npy format, and in addition - 
 to filter out the vowels and keep the 6 commands "up down forward backward right left" - for that run "extractRelevantEEG.py" 
-3) now run "extractEEGFromDataSet.py" with updated input and output folders (the output folder should include also subfolders named "S01" to S15" for the 15 different speakers)
+3) now run "extractEEGFromDataSet.py" with updated input and output folders 
+(the output folder should include also subfolders named "S01" to "S15" for the 15 different speakers)
 to convert the mat files to .npy that we can easily work with.
 
 in case of pronounced and imagined speech, 
