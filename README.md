@@ -1,12 +1,12 @@
 # MotionControlUsingEEGSignals
+This work is based on the following article:
+https://www.researchgate.net/publication/312953157_Open_access_database_of_EEG_signals_recorded_during_imagined_speech
 This is a repo for our implementation of a 6 label motion control using EEG signals
-
-This code enables data preparatin and model training. 
+This code enables data preparatin and model training.
 # data preperation
 
-1) first download the "Imagined Speech" dataset, these are the relevant links:
-article responsible for dataset collection: https://www.researchgate.net/publication/312953157_Open_access_database_of_EEG_signals_recorded_during_imagined_speech
-direct dataset download: https://drive.google.com/file/d/0By7apHbIp8ENZVBLRFVlSFhzbHc/view
+1) first download the "Imagined Speech" dataset from the following link:
+https://drive.google.com/file/d/0By7apHbIp8ENZVBLRFVlSFhzbHc/view
 2) now we would like to take the raw dataset that comes in mat format and turn it into something more python friendly like npy format, and in addition - 
 to filter out the vowels and keep the 6 commands "up down forward backward right left" - for that run "extractRelevantEEG.py" 
 3) now run "extractEEGFromDataSet.py" with updated input and output folders (the output folder should include also subfolders named "S01" to S15" for the 15 different speakers)
